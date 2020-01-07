@@ -130,15 +130,15 @@
 				}
 				strAutoStart = false;
 				numHeight = String(Number(numHeight)+ 18); // add up the height of the player controls
-				strResult = '<object class="podpress_player_object" classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" width="'+numWidth+'px" height="'+numHeight+'px" codebase="http://www.apple.com/qtactivex/qtplugin.cab">';
+				strResult = '<object class="podpress_player_object" classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" width="'+numWidth+'px" height="'+numHeight+'px" codebase="https://www.apple.com/qtactivex/qtplugin.cab">';
 				strResult += '	<param name="src" value="'+strMediaFile+'" />';
 				strResult += '	<param name="href" value="'+strMediaFile+'" />';
 				strResult += '	<param name="scale" value="aspect" />';
 				strResult += '	<param name="controller" value="true" />';
 				strResult += '	<param name="autoplay" value="'+strAutoStart+'" />';
 				strResult += '	<param name="bgcolor" value="000000" />';
-				strResult += '	<param name="pluginspage" value="http://www.apple.com/quicktime/download/" />';
-				strResult += '	<embed src="'+strMediaFile+'" width="'+numWidth+'" height="'+numHeight+'" style="width:'+numWidth+'px; height:'+numHeight+'px; background-color:#000;" scale="aspect" cache="true" autoplay="'+strAutoStart+'" controls="true" src="'+strMediaFile+'" type="'+strMimeType+'" pluginspage="http://www.apple.com/quicktime/download/"></embed>';
+				strResult += '	<param name="pluginspage" value="https://www.apple.com/quicktime/download/" />';
+				strResult += '	<embed src="'+strMediaFile+'" width="'+numWidth+'" height="'+numHeight+'" style="width:'+numWidth+'px; height:'+numHeight+'px; background-color:#000;" scale="aspect" cache="true" autoplay="'+strAutoStart+'" controls="true" src="'+strMediaFile+'" type="'+strMimeType+'" pluginspage="https://www.apple.com/quicktime/download/"></embed>';
 				strResult += '</object><br/>';
 				break;
 			case 'wma':
@@ -166,12 +166,12 @@
 				} else {
 					strAutoStart = ' play="false"';
 				}
-				strResult = '<object class="podpress_player_object" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0"'+strAutoStart+' width="'+numWidth+'" height="'+numHeight+'" menu="true">';
+				strResult = '<object class="podpress_player_object" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="https://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0"'+strAutoStart+' width="'+numWidth+'" height="'+numHeight+'" menu="true">';
 				strResult += '	<param name="movie" value="'+strMediaFile+'" />';
 				strResult += '	<param name="quality" value="high" />';
 				strResult += '	<param name="menu" value="true" />';
 				strResult += '	<param name="scale" value="noorder" />';
-				strResult += '	<embed src="'+strMediaFile+'" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"'+strAutoStart+' width="'+numWidth+'" height="'+numHeight+'" menu="true"></embed>';
+				strResult += '	<embed src="'+strMediaFile+'" quality="high" pluginspage="https://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"'+strAutoStart+' width="'+numWidth+'" height="'+numHeight+'" menu="true"></embed>';
 				strResult += '</object><br />';
 				break;
 			case 'flv':
@@ -269,10 +269,10 @@
 				}
 				// classid is for the Adobe Flash Player and is necessary in IE6 which inserts this object tag via innerHTML only with this classid
 				strResult = '<object class="podpress_player_object" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="'+String(numWidth)+'" height="'+String(numHeight)+'">';
-				strResult += '	<param name="movie" value="'+'http://www.youtube.com/v/'+strMediaFile+'&rel=1&fs=1&autoplay='+strAutoStart+'" />';
+				strResult += '	<param name="movie" value="'+'https://www.youtube.com/v/'+strMediaFile+'&rel=1&fs=1&autoplay='+strAutoStart+'" />';
 				strResult += '	<param name="allowFullScreen" value="true"></param>';
 				strResult += '	<param name="allowScriptAccess" value="always"></param>';
-				strResult += '	<embed src="'+'http://www.youtube.com/v/'+strMediaFile+'&rel=1&fs=1&autoplay='+strAutoStart+'" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="'+String(numWidth)+'" height="'+String(numHeight)+'"></embed>';
+				strResult += '	<embed src="'+'https://www.youtube.com/v/'+strMediaFile+'&rel=1&fs=1&autoplay='+strAutoStart+'" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="'+String(numWidth)+'" height="'+String(numHeight)+'"></embed>';
 				strResult += '</object>';
 			break;
 			case 'mp3':
@@ -432,7 +432,7 @@
 	}
 	
 	
-	/** podPressencodeSource - Encodes the given string. This function is the JS equivalent of the function with the same name of the WP Audio Player plugin (http://wpaudioplayer.com/standalone)
+	/** podPressencodeSource - Encodes the given string. This function is the JS equivalent of the function with the same name of the WP Audio Player plugin (https://wpaudioplayer.com/standalone)
 	* @param str String - the string to encode
 	* @return String - the encoded string
 	*/
@@ -543,8 +543,8 @@
 		if (typeof numWidth == 'undefined') { numWidth = 320; }
 		if (typeof numHeight == 'undefined') { numHeight = 240; }
 		
-		var strResult = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">\n';
-		strResult += '<HTML xmlns="http://www.w3.org/1999/xhtml">\n';
+		var strResult = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">\n';
+		strResult += '<HTML xmlns="https://www.w3.org/1999/xhtml">\n';
 		strResult += '<HEAD>\n';
 		strResult += '<TITLE>'+windowName+' - Popup Player</TITLE>\n';
 		strResult += '<link rel="stylesheet" id="podpress_frontend_styles-css"  href="'+podPressBackendURL+'style/podpress.css" type="text/css" media="all" />\n';
@@ -641,10 +641,10 @@
 		var realurl = document.getElementById('podPressPlayerSpace_' + strPlayerDiv + '_OrigURL').value;
 		if ( typeof podPressPT == 'boolean' && podPressPT == true ) {
 			realurl = realurl.replace(/^(https?:\/\/|http:\/\/)/, '');
-			realurl = 'http://www.podtrac.com/pts/redirect.mp3/' + realurl;
+			realurl = 'https://www.podtrac.com/pts/redirect.mp3/' + realurl;
 		} else if ( typeof podPressBK == 'string' && podPressBK != '' ) {
 			realurl = realurl.replace(/^http:\/\//, '');
-			realurl = 'http://media.blubrry.com/' + podPressBK + '/'+ realurl;
+			realurl = 'https://media.blubrry.com/' + podPressBK + '/'+ realurl;
 		}
 		return realurl;
 	}

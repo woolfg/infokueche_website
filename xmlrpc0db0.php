@@ -2,13 +2,13 @@
   <service>
     <engineName>WordPress</engineName>
     <engineLink>https://wordpress.org/</engineLink>
-    <homePageLink>http://www.infokueche.at</homePageLink>
+    <homePageLink>https://www.infokueche.at</homePageLink>
     <apis>
-      <api name="WordPress" blogID="1" preferred="true" apiLink="http://www.infokueche.at/xmlrpc.php" />
-      <api name="Movable Type" blogID="1" preferred="false" apiLink="http://www.infokueche.at/xmlrpc.php" />
-      <api name="MetaWeblog" blogID="1" preferred="false" apiLink="http://www.infokueche.at/xmlrpc.php" />
-      <api name="Blogger" blogID="1" preferred="false" apiLink="http://www.infokueche.at/xmlrpc.php" />
-      	<api name="WP-API" blogID="1" preferred="false" apiLink="http://www.infokueche.at/wp-json/" />
+      <api name="WordPress" blogID="1" preferred="true" apiLink="https://www.infokueche.at/xmlrpc.php" />
+      <api name="Movable Type" blogID="1" preferred="false" apiLink="https://www.infokueche.at/xmlrpc.php" />
+      <api name="MetaWeblog" blogID="1" preferred="false" apiLink="https://www.infokueche.at/xmlrpc.php" />
+      <api name="Blogger" blogID="1" preferred="false" apiLink="https://www.infokueche.at/xmlrpc.php" />
+      	<api name="WP-API" blogID="1" preferred="false" apiLink="https://www.infokueche.at/wp-json/" />
 	    </apis>
   </service>
 </rsd>
